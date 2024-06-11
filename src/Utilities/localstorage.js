@@ -17,4 +17,10 @@ const addToLs = id => {
     saveCartToLS(cart);
 }
 
-export {addToLs, getStoredCart}
+const removeLS = id =>{
+    const cart = getStoredCart();
+    const remaining = cart.filter(idx => idx !== id);
+    saveCartToLS(remaining);
+}
+
+export {addToLs, getStoredCart, removeLS}

@@ -1,0 +1,8 @@
+.imgCon{
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.imgCon img{
+    width: 100px;
+    gap: 5px;
+}
